@@ -1,0 +1,32 @@
+public class Poodle extends Dog {
+	
+		  private String whereFrom;
+		  
+		  public Poodle (String dogName, int weight)
+		  {
+		    super (dogName,weight);
+		  }
+		  
+		  public void setPlace(String location)
+		  {
+		    whereFrom = location;
+		  }
+		  
+		  public String speak()  // overwrites speak in Dog
+		  {
+		    return "bow wow!!";
+		  } 
+		  
+		  public String move()  // overwrites move in Dog
+		  {
+		    return  "glorious long strides";
+		  }
+		  
+		  public String cityOfOrigin()
+		  {
+		    return whereFrom;
+		  }  
+		  
+		}
+
+}

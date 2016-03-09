@@ -1,0 +1,31 @@
+
+public class Black extends Cat{
+	
+		  private int badLuck;
+		  
+		  public Black (String catName, int weight)
+		  {
+		    super (catName,weight);
+		  }
+		  
+		  public void setPlace(String location)
+		  {
+		    whereFrom = location;
+		  }
+		  
+		  public String speak()  // overwrites speak in Dog
+		  {
+		    return "chalupa!!";
+		  } 
+		  
+		  public String move()  // overwrites move in Dog
+		  {
+		    return  "little tiny steps";
+		  }
+		  
+		  public int amountOfBadluck()
+		  {
+		    return whereFrom;
+		  }
+}
+		  
